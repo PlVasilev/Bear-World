@@ -6,6 +6,7 @@ html {
 
 body, form, input, textarea, option, select, button {
     font: inherit;
+    background-color: rgb(240, 234, 223);
 }
 
 p, ul, ol {
@@ -54,4 +55,8 @@ blockquote p.author {
 
 a{
     text-decoration: none;
+}
+
+.site-branding h1 a{
+    color: white;
 }

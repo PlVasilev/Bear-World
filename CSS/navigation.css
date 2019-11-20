@@ -1,10 +1,11 @@
 .nav {
     text-align: right;
-    padding-top: 0.5em;
+    
 }   
 
 .nav ul {
     display: flex;
+   
 }
 
 .nav ul li {
@@ -14,15 +15,17 @@
 
 .nav a {
     display: flex;
-    padding: 0.5em 1em;
+    padding: 0.4em 0.8em;
     background: #EEE;
     color: #333;
     text-decoration: none;
+    border-radius: 0.3em;
 }
 
 .nav a:hover {
     background: #090;
     color: #FFF;
+    font-weight: 700;
 }
 
 .nav li a:before {
@@ -32,10 +35,18 @@
     font-weight: 900;
 }
 
-.nav li.page-title-about a:before {
-    content: '\f47f';
+.nav li.page-title-gallery a:before {
+    content: '\f302';
 }
 
 .nav li.page-title-contacts a:before {
     content: '\f2a0';
+}
+
+.nav li.page-title-home a:before {
+    content: '\f015';
+}
+
+.nav li.page-title-news a:before {
+    content: '\f1ea';
 }
