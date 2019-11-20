@@ -8,6 +8,11 @@
     <title>{{ site.title }}</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/CSS/fontawesome/css/all.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/CSS/site.css">
+    <script>
+            window.addEventListener('load', (event) => {
+                document.querySelector('body').classList.add('loaded');
+            });
+        </script>
 </head>
 
 <body>
@@ -15,7 +20,7 @@
         <header class="site-header">
             <div class="wrapper">
                 <div class="site-branding">
-                    <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+                    <h1 class="site-lable"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
                 </div>
                 <nav class="nav">
                     <ul>
@@ -34,7 +39,9 @@
         </header>
 
         <main class="site-main">
-            {{ content }}
+            
+                {{ content }}
+           
         </main>
 
         <footer class="site-footer">
@@ -63,21 +70,22 @@
                     <label for="for">Social Media</label>
                     <nav>
                         <li><i class="fab fa-facebook-f"></i> <a href="#">{{ site.facebook_username }}</a></li>
-                        <li><i class="fab fa-facebook-f"></i> <a href="#">{{ site.email }}</a></li>
-                        <li><i class="fab fa-youtube"></i> <a href="#">{{ site.twitter_username}}</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="#">{{ site.email }}</a></li>
+                        <li><i class="fab fa-twitter"></i> <a href="#">{{ site.twitter_username}}</a></li>
                         <li><i class="fab fa-instagram"></i> <a href="#">{{ site.instagram_username}}</a></li>
-                        <li><i class="fab fa-github"></i> <a href="#">CSS Advanced 12/2019</a></li>
+                        <li><i class="fab fa-github"></i> <a href="https://github.com/PlVasilev/BearWorld">CSS Advanced 12/2019</a></li>
                     </nav>
-                </section>        
-                    <section class="footer-info">
-                            <p><i class="far fa-clock"></i> Open 09:00 - 16:00</p>
-                            <a href="{{ site.baseurl }}/contacts">
-                            <p><i class="fas fa-map-marker-alt"></i> Rila mountain Belica</p></a>
-                            <p> Bear World &copy; All rights reserved</p>
-                </section>    
+                </section>
+                <section class="footer-info">
+                    <p><i class="far fa-clock"></i> Open 09:00 - 16:00</p>
+                    <a href="{{ site.baseurl }}/contacts">
+                        <p><i class="fas fa-map-marker-alt"></i> Rila mountain Belica</p>
+                    </a>
+                    <p> Bear World &copy; All rights reserved</p>
+                </section>
             </div>
-       
-        </section>
+
+            </section>
     </div>
     </footer>
     </div>
