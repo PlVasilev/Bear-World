@@ -102,7 +102,7 @@ header  h1 {
     transform: translateX(0);
     opacity: 1;
 }
- 
+
 .site-nav-label {
     display: none;
 }
@@ -119,6 +119,8 @@ header  h1 {
 
 
 @media ( max-width: 999px ) {
+    .site-nav-toggle + .site-header .wrapper .site-nav { display: none; }
+    .site-nav-toggle:checked + .site-header .wrapper .site-nav { display: block; }
 
 header .wrapper{
     flex-direction: column;  
@@ -160,7 +162,7 @@ nav{
 }
 
 .site-nav-toggle:checked + .site-header .wrapper  .site-nav {
-    display: none;
+    display: block;
 }
 
 }
