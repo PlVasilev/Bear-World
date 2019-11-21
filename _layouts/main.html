@@ -9,20 +9,25 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/CSS/fontawesome/css/all.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/CSS/site.css">
     <script>
-            window.addEventListener('load', (event) => {
-                document.querySelector('body').classList.add('loaded');
-            });
-        </script>
+        window.addEventListener('load', (event) => {
+            document.querySelector('body').classList.add('loaded');
+        });
+    </script>
 </head>
 
 <body>
     <div class="site">
+        <input type="checkbox" id="site-nav-toggle" class="site-nav-toggle" >
         <header class="site-header">
             <div class="wrapper">
-                <div class="site-branding">
+                <div class="site-branding">                 
                     <h1 class="site-lable"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+                    <label for="site-nav-toggle" class="site-nav-label">
+                            <span class="close"><i class="far fa-list-alt"></i></span>
+                            <span class="open"><i class="fas fa-list-alt"></i></span>         
+                    </label>
                 </div>
-                <nav class="nav">
+                <nav class="site-nav">
                     <ul>
                         {% assign navigation_pages = site.pages | sort:"order" %}
                         {% for page in navigation_pages %}
@@ -31,17 +36,19 @@
                                 href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
                         {% endif %}
                         {% endfor %}
+                       
                     </ul>
                     {% if include.location == 'header' %}
                     {% endif %}
+                  
                 </nav>
             </div>
         </header>
 
         <main class="site-main">
-            
-                {{ content }}
-           
+
+            {{ content }}
+
         </main>
 
         <footer class="site-footer">
@@ -73,7 +80,8 @@
                         <li><i class="fas fa-envelope"></i> <a href="#">{{ site.email }}</a></li>
                         <li><i class="fab fa-twitter"></i> <a href="#">{{ site.twitter_username}}</a></li>
                         <li><i class="fab fa-instagram"></i> <a href="#">{{ site.instagram_username}}</a></li>
-                        <li><i class="fab fa-github"></i> <a href="https://github.com/PlVasilev/BearWorld">CSS Advanced 12/2019</a></li>
+                        <li><i class="fab fa-github"></i> <a href="https://github.com/PlVasilev/BearWorld">CSS Advanced
+                                12/2019</a></li>
                     </nav>
                 </section>
                 <section class="footer-info">

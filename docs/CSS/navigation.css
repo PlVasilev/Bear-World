@@ -1,14 +1,14 @@
-.nav {
+.site-nav {
     text-align: right;
     
 }   
 
-.nav ul {
+.site-nav ul {
     display: flex;
    
 }
 
-.nav ul li {
+.site-nav ul li {
     display: block;
     margin: 0 0.7em;
     transform: translate(0, -5em);
@@ -44,7 +44,7 @@ nav ul li a {
     transition: background 0.3s ease-in;
 }
 
-.nav a {
+.site-nav a {
     display: flex;
     padding: 0.4em 0.8em;
     background-color: rgb(240, 234, 223);
@@ -53,32 +53,38 @@ nav ul li a {
     border-radius: 0.3em;
 }
 
-.nav a:hover {
+.site-nav-label {
+    font-size: 2em;
+    
+}
+
+
+.site-nav a:hover, .site-nav-label:hover {
     background: #090;
     color: #FFF;
     font-weight: 700;
 }
 
-.nav li a:before {
+.site-nav li a:before, .site-nav-label:before  {
     display: block;
     margin-right: 0.5em;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
 }
 
-.nav li.page-title-gallery a:before {
+.site-nav li.page-title-gallery a:before {
     content: '\f302';
 }
 
-.nav li.page-title-contacts a:before {
+.site-nav li.page-title-contacts a:before {
     content: '\f2a0';
 }
 
-.nav li.page-title-home a:before {
+.site-nav li.page-title-home a:before {
     content: '\f015';
 }
 
-.nav li.page-title-news a:before {
+.site-nav li.page-title-news a:before {
     content: '\f1ea';
 }
 
@@ -96,3 +102,66 @@ header  h1 {
     transform: translateX(0);
     opacity: 1;
 }
+ 
+.site-nav-label {
+    display: none;
+}
+
+.site-nav-toggle{
+    display: none;
+}
+
+.site-nav-toggle + .site-header .wrapper .site-nav-label .open { display: block; }
+.site-nav-toggle + .site-header .wrapper .site-nav-label .close { display: none; }
+
+.site-nav-toggle:checked + .site-header .wrapper .site-nav-label .open { display: none; }
+.site-nav-toggle:checked + .site-header .wrapper .site-nav-label .close { display: block; }
+
+
+@media ( max-width: 999px ) {
+
+header .wrapper{
+    flex-direction: column;  
+}
+
+header .wrapper .site-branding{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+    padding-bottom: 0.5em;
+}
+
+.site-title{
+    align-self: flex-start;
+    padding-bottom: 2rem;
+}
+
+.site-nav ul {
+    flex-direction: column;  
+    padding-left: 0;
+}
+
+.site-nav li {
+    list-style: none outside;
+    padding: 0.2em;
+    
+}
+
+.site-nav-label {
+    display: block;
+    padding-right: 0.4em;
+    color: rgb(240, 234, 223);;
+}
+
+.site-nav-toggle:checked + .site-header .wrapper  .site-nav {
+    display: none;
+}
+
+}
+

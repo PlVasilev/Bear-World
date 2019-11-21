@@ -65,3 +65,25 @@
     color: white;
     padding-bottom: 0.5em;
 }
+
+@media ( max-width: 999px ) {
+    .site-footer .wrapper{
+        flex-direction: column;
+        justify-content: flex-start;     
+    }
+
+    .footer-links {
+       padding: 0;
+    }
+
+    .footer-links label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+    .footer-info{
+        max-width: 100%;
+    }
+}
