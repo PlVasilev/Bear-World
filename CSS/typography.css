@@ -33,30 +33,38 @@ h4 { font-size: 1.4em; }
 h5 { font-size: 1.2em; }
 h6 { font-size: 1.0em; }
 
-blockquote {
-    padding: 0 2.5em;
-    border-left: 2px solid #000;
-    font-family: Georgia, serif;
-    margin-bottom: var(--layout-padding-b, 1.5em);
-}
-
-blockquote p {
-    font-style: italic;
-    /* padding: 0; */
-}
-
-blockquote p:last-child {
-    padding-bottom: 0;
-}
-
-blockquote p.author {
-    text-align: right;
-}
-
 a{
     text-decoration: none;
 }
 
 .site-branding h1 a{
     color: white;
+}
+
+blockquote {
+    border-left: 4px solid rgb(221,221,221);
+    font-family: Georgia, serif;
+    font-style: italic;
+    opacity: 0.8;
+    width: 30%;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-left: 1em;
+    float: right;
+}
+
+blockquote p{
+    font-style: italic;
+}
+
+blockquote .author {
+    font-style: italic;
+    text-align: right;
+    opacity: 0.8;
+}
+
+blockquote .author:before {
+    display: inline-block;
+    content: '\2014';
+    padding-right: 0.8em;
 }

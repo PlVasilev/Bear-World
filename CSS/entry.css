@@ -1,3 +1,14 @@
+.index-hr{
+    width: 50%;
+    margin: 1em auto;
+    height: 5px;
+    background-color: burlywood;
+    background-color: #7D6962;
+    border: none;
+    border-radius: 50%;
+    
+}
+
 .entries-lable, .site-lable {
     font: bold 2.6em arial, sans-serif;
     font-style: italic;
@@ -7,6 +18,7 @@
     -webkit-background-clip: text;
      -moz-background-clip: text;
           background-clip: text;
+    
 }
 
 .entry {
@@ -17,7 +29,7 @@
     z-index: 30;
     top: 1em;
     box-shadow: 0 0 1em 0 rgba(0,0,0,0.1);
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 .entry:hover img {
     transform: translate( -50%, -50% ) scale(1.2);
@@ -61,6 +73,7 @@
     z-index: 20;
     box-shadow: 0 0 1.5em 0 rgba( 0, 0, 0, 0.07);
     padding: 2em;
+    overflow: hidden;
 }
 
 .entry-title {
@@ -69,14 +82,14 @@
     font-size: 3em;
 }
 
-.entry-content a,.entry-content p {
+.entry-content a,.entry-content p, .worker-info h4, .worker-info p {
     color: var(--color-pimary);
 }
 
 .entry-content a{
     font-style: italic;
+    
 }
-
 
 .entry-meta {
     margin-bottom: 1em;
@@ -97,17 +110,129 @@
     margin: 2em -2em 2em 2em;
 }
 
+.quote{
+    margin: 1em 0;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F8F8F8;
+    top: 1em;
+    box-shadow: 0 0 1em 0 rgba(0,0,0,0.1);
+}
+
+.quote .entries-lable{
+    font: bold 1em arial, sans-serif;
+    font-style: italic;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    padding-left: 1em;
+}
+
+
+.staff{
+    display: flex;
+    background: #F8F8F8;
+    padding: 1em;
+    box-shadow: 0 0 1em 0 rgba(0,0,0,0.1);
+}
+.worker{
+    display: flex;
+}
+
+.staff h4{
+    font-style: italic;
+    text-align: center;
+   font-size: 2em;
+}
+
+.worker span{
+   display: block;
+}
+
+.worker .worker-avatar {
+   width: 10em;
+   margin: 0 auto;
+   margin-bottom: 1.5em;
+}
+
+.worker-avatar {
+   display: block;
+   border-radius: 50%;
+   overflow: hidden;
+   position: relative;
+   box-shadow: 0 0.2em 0.5rem 0 rgba(0,0,0,0.3);
+  
+}
+
+.worker-avatar:before,
+.worker-avatar:after {
+   display: block;
+   content: '';
+}
+
+.worker-avatar:before {
+   position: absolute;
+   top: 0; left: 0; right: 0; bottom: 0;
+   border-radius: 50%;
+   box-shadow: 0 0 0 4px rgba(255,255,255,0.5) inset;
+   z-index: 10;
+   pointer-events: none;
+}
+
+.worker-avatar:after {
+   padding-top: 100%;
+}
+
+.worker-avatar img {
+   display: block;
+   width: 100%;
+   height: auto;
+   position: absolute;
+   top: 50%; left: 0%;
+   transform: translateY(-33%);
+   z-index: 5;
+}
+
+.worker-info{
+   flex: 0 0 75%;
+   margin-left: 1em;
+}
+
+.worker-info p{
+   font-size: 0.9em;
+ }
+
 @media ( max-width: 999px ) {
+
+    .quote{
+        flex-wrap: wrap;
+    }
+
+    .quote .entries-lable{
+
+        padding-left: 0.5em;
+    }
+
+    blockquote {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: 0.2em;
+}
 
     .entry{
         display: block;
-        height: 50vh;
+        height: 58vh;
     }
 
     .entry-media {
-        height: 20vh;
+        height:  45%;
     }
 
+    .entry-content {
+        max-height: 50%;
+    }
+    
     .entry-media img {
         width: 92%;
     }
@@ -126,15 +251,8 @@
 html {
     font-size: 16px; 
 }
-    
-.entry{
-    display: block;
-    height: 46vh;
-}
-
-.entry-content {
-  margin: 0;
- padding: 0;
+.entry-title {
+    font-size: 2em;
 }
 
 .entry-media img {
@@ -148,32 +266,57 @@ html {
 .entry:nth-child(odd) .entry-content {
     margin: 1em;
 }
+
+blockquote { 
+    width: 90%;
+    margin-bottom: 1em;
+}
+
+.quote{
+    flex-direction: column;
+}
+
+.quote .entries-lable{
+    writing-mode: horizontal-tb;
+    text-orientation: sideways;
+    margin-bottom: 1em;
+}
+
+.worker{
+    flex-direction: column;
+}
+
+.worker .worker-info{
+    flex-direction: column;
+    flex: 0 0 50%;
+    margin-left: 0 auto;
+}
+
+
+.staff p{
+   font-size: 0.8em;
+}
+
 }
 
 @media ( max-width: 465px ) {
+    .entry{
+        display: block;
+        height: 52vh;
+    }
 
     html {
         font-size: 14px;
-  
-    }
-
-    .entry-title {
-   
-        font-size: 2em;
-    }
-
-    .entry{
-        display: block;
-        height: 40vh;
     }
 }
 
 @media ( max-width: 370px ) {
+    .entry{
+        display: block;
+        height: 48vh;
+    }
     html {
         font-size: 12px;
-    }
-    .entry-title {
-        font-size: 2em;
     }
 }
 
