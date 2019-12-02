@@ -17,9 +17,14 @@
     align-items: center;
 }
 
-.site-footer .wrapper{
+.site-footer .wrapper{  
     align-items: flex-start;
-
+ 
+    @include bp(medium){
+        flex-direction: column;
+        justify-content: center;   
+        align-items: center; 
+    }
 }
 
 .site-footer .wrapper iframe{
