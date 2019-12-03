@@ -1,0 +1,156 @@
+.map-responsive{
+    height: 45vh;
+    margin: 1em 1em;
+
+    & iframe{
+        border: 3px solid rgba($color: #000000, $alpha: 0.5);
+        border-radius: 0.3em;
+        box-shadow: 0 0 1em 0 rgba(0,0,0,0.4);
+    } 
+}
+
+form {
+    
+    color: var(--color-pimary);
+
+    textarea,
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="password"] {
+        display: block;
+        border: 1px solid #CCC;
+        padding: 0.5em 0.8em;
+        border-radius: 0.3em;
+        outline: none;
+        background-color: white;
+
+        &:focus {
+            border-color: #090;
+
+            & + label {
+                color: #090;
+            }
+        }
+    }
+
+    .user-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @include bp(small) {
+            flex-direction: column;
+        }
+    
+
+    }
+
+    .field {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2em;
+        flex: 0 0 48%;
+
+        label {
+            order: 1;
+            display: block;
+            padding-bottom: 0.2em;
+        }
+
+        input,textarea {
+            order: 2;
+        }
+
+        &.submit {
+            input {
+                display: block;
+                border: 1px solid #CCC;
+                background: white;
+                padding: 1em 0;
+                text-align: center;
+                border-radius: 0.3em;
+                font-weight: 700;
+                font-style: italic;
+                color: var(--color-pimary);
+            }
+
+            input:hover, input:focus{
+                border-color: #090;
+                color: #090;
+            }
+        }
+
+    }
+
+}
+
+fieldset {
+    margin: 1em 1em;
+    display: flex;
+    width: calc(100% - 2em);
+    border: 3px solid rgba($color: #000000, $alpha: 0.5);
+    border-radius: 0.3em;      
+    padding: 2rem;
+    color: var(--color-pimary);
+    
+    & label{
+        font-weight: 700;
+        font-style: italic;
+    }
+    
+    legend {
+        padding: 0 1em;
+        font-weight: bold;
+        font-size: 1.4em;
+    }
+}
+
+
+.workers{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.workers-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.workers-list div{
+    flex:  0 0 30%;
+    text-align: center;
+}
+
+.workers-list img {
+    padding-bottom: 1rem;
+}
+
+.workers{
+    padding: 1rem 1rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.workers img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.workers h4{
+    margin: 0;
+    font-style: italic;
+    padding-bottom: 0rem;
+}
+
+.workers h5{
+    padding-bottom: 1rem;
+}
+
+.coaches p{
+    max-width: 240px;
+    margin: 0 auto;
+    color: grey;
+}
+

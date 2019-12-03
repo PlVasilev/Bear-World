@@ -146,3 +146,86 @@
     @media only screen and (max-width: 300px) {
       .prev, .next,.text {font-size: 11px}
     }
+
+    .paw{ 
+      animation: box-circle 2s ease-in-out alternate infinite forwards;
+  }
+  
+  @keyframes box-circle{
+      0%{ 
+      }
+  
+      100%{
+          transform: scale(0.0); 
+      }
+  }
+
+  .paw-none{ 
+    animation: box-circle-none 2s ease-in-out alternate infinite forwards;
+}
+
+@keyframes box-circle-none{
+    0%{ 
+      transform: scale(0.0); 
+    }
+
+    100%{
+        
+    }
+}
+
+.site-media {
+	min-height: 30vh;
+	overflow: hidden;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 2em 0;
+}
+
+.site-media:before {
+	display: block;
+	content: '';
+	background: rgba(19,41,48, 0.4);
+	position: absolute;
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0;
+}
+
+.site-media .wrapper {
+	width: 100%;
+	position: relative;
+	z-index: 10;
+	padding-top: 2rem;
+  padding-bottom: 5rem;
+
+	@include bp(large) {
+		padding-right: 10em;
+	}
+}
+
+.site-media p,
+.site-media h2 {
+}
+
+.site-media h2 {
+  font-weight: 700;
+  color: #7D6962;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.site-media p {
+	font-weight: 400;
+  opacity: 0.8;
+  color: white;
+}
+
+.site-media .social {
+	padding-top: 2em;
+}

@@ -28,7 +28,7 @@
     position: relative;
     z-index: 30;
     top: 1em;
-    box-shadow: 0 0 1em 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 1em 0 rgba(0,0,0,0.5);
     margin-bottom: 2em;
 }
 .entry:hover img {
@@ -71,7 +71,7 @@
     margin: 2em 2em 2em -2em;
     position: relative;
     z-index: 20;
-    box-shadow: 0 0 1.5em 0 rgba( 0, 0, 0, 0.07);
+    box-shadow: 0 0 1.5em 0 rgba( 0, 0, 0, 0.2);
     padding: 2em;
     overflow: hidden;
 }
@@ -118,7 +118,7 @@
     align-items: center;
     background: #F8F8F8;
     top: 1em;
-    box-shadow: 0 0 1em 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 1em 0 rgba(0,0,0,0.4);
 }
 
 .quote .entries-lable{
@@ -134,7 +134,7 @@
     display: flex;
     background: #F8F8F8;
     padding: 1em;
-    box-shadow: 0 0 1em 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 1em 0 rgba(0,0,0,0.4);
 }
 .worker{
     display: flex;

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ site.title }}</title>
     <!-- <link rel="stylesheet" href="/CSS/fontawesome/css/all.css"> -->
-    <link rel="stylesheet" href="/css/site.css"> 
+    <link rel="stylesheet" href="/css/site.css">
     <!-- <link rel="stylesheet" href="{{ site.baseurl }}/CSS/fontawesome/css/all.css"> -->
     <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
     <script>
@@ -32,10 +32,10 @@
                 <nav class="site-nav">
                     <ul>
                         {% assign navigation_pages = site.pages | sort:"order" %}
-                        {% for page in navigation_pages %}
-                        {% if page.title %}
-                        <li class="page-title-{{ page.title | slugify }}"><a
-                                href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+                        {% for current_page in navigation_pages %}
+                        {% if current_page.title %}
+                        <li class="page-title-{{ current_page.title | slugify }}{% if current_page.url == page.url %} current-page{% endif %}"><a
+                                href="{{ site.baseurl }}{{ current_page.url }}">{{ current_page.title }}</a></li>
                         {% endif %}
                         {% endfor %}
 
@@ -77,7 +77,9 @@
                         </nav>
                     </section>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56389.60222816555!2d23.55996753057924!3d42.03002526962659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1ffd21c19fb792d1!2z0J_QsNGA0Log0LfQsCDRgtCw0L3RhtGD0LLQsNGJ0Lgg0LzQtdGH0LrQuA!5e0!3m2!1sbg!2sbg!4v1574433900083!5m2!1sbg!2sbg" width="400" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56389.60222816555!2d23.55996753057924!3d42.03002526962659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1ffd21c19fb792d1!2z0J_QsNGA0Log0LfQsCDRgtCw0L3RhtGD0LLQsNGJ0Lgg0LzQtdGH0LrQuA!5e0!3m2!1sbg!2sbg!4v1574433900083!5m2!1sbg!2sbg"
+                    width="400" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 <div class="footer-right">
                     <section class="footer-links">
                         <label for="for">Social Media</label>
@@ -91,9 +93,7 @@
                     </section>
                     <section class="footer-info">
                         <p><i class="far fa-clock"></i> Open 09:00 - 16:00</p>
-                        <a href="{{ site.baseurl }}/contacts">
-                            <p><i class="fas fa-map-marker-alt"></i> Rila mountain Belica</p>
-                        </a>
+                        <p><a href="{{ site.baseurl }}/contacts"><i class="fas fa-map-marker-alt"></i> Rila mountainBelica</a></p>
                         <p> Bear World &copy; All rights reserved</p>
                     </section>
                 </div>
