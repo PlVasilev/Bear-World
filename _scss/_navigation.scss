@@ -5,7 +5,7 @@
     
     & ul li {
         display: block;
-        margin: 0 0.7em;
+        margin: 0 0.3em;
         transform: translate(0, -5em);
         opacity: 0;
         transition: opacity 0.3s ease-in, transform 0.3s ease-in;
@@ -39,6 +39,8 @@
     & li.page-title-contacts a:before {  content: '\f2a0';}
     & li.page-title-home a:before { content: '\f015';}
     & li.page-title-news a:before { content: '\f1ea';}
+    & li.page-title-about-us a:before { content: '\f0c0';}
+
 
     & a {
         display: flex;

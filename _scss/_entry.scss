@@ -1,6 +1,6 @@
 .index-hr{
     width: 50%;
-    margin: 1em auto;
+    margin: 2em auto;
     height: 5px;
     background-color: burlywood;
     background-color: #7D6962;
@@ -10,6 +10,7 @@
 }
 
 .entries-lable, .site-lable {
+    padding-left: 1em;
     font: bold 2.6em arial, sans-serif;
     font-style: italic;
     background-color: #7D6962;
@@ -190,7 +191,7 @@
    height: auto;
    position: absolute;
    top: 50%; left: 0%;
-   transform: translateY(-33%);
+   transform: translateY(-50%);
    z-index: 5;
 }
 

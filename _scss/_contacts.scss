@@ -108,18 +108,37 @@ fieldset {
 
 
 .workers{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
+
+    & a{
+        color: var(--color-pimary);
+        font-size: 1.2em;
+        @include bp(medium) {
+            font-size: 1.0em;
+        }
+    }
+ 
+
 }
 
 .workers-list{
     display: flex;
     justify-content: space-between;
+
+    @include bp(small) {
+        flex-direction: column;
+    }
+
 }
 
 .workers-list div{
     flex:  0 0 30%;
     text-align: center;
+    @include bp(small) {
+        padding: 0 2em 2em 2em;
+        
+    }
 }
 
 .workers-list img {
@@ -141,16 +160,20 @@ fieldset {
 .workers h4{
     margin: 0;
     font-style: italic;
+    font-size: 1.6em;
     padding-bottom: 0rem;
+    @include bp(medium) {
+        font-size: 1.4em;
+    }
 }
 
 .workers h5{
+    font-size: 1.4em;
     padding-bottom: 1rem;
+    @include bp(medium) {
+        font-size: 1.2em;
+    }
 }
 
-.coaches p{
-    max-width: 240px;
-    margin: 0 auto;
-    color: grey;
-}
+
 
