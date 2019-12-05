@@ -1,0 +1,13 @@
+.about-us{
+    background: linear-gradient(271deg, #41d31c, #dd791b);
+    background-size: 400% 400%;
+ 
+    animation: AnimationName 25s ease infinite;
+    box-shadow: 6px 6px 19px 6px rgb(100, 100, 100);
+}
+
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}

@@ -23,6 +23,7 @@ body{
 
 .site-footer .wrapper{  
     align-items: flex-start;
+    padding: 1em 0;
  
     @include bp(medium){
         flex-direction: column;

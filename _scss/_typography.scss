@@ -42,10 +42,12 @@ a{
 }
 
 blockquote {
+    margin-top: 1em;
+    margin-bottom: 1em;
     border-left: 4px solid rgb(221,221,221);
     font-family: Georgia, serif;
     font-style: italic;
-    opacity: 0.8;
+    opacity: 0.9;
     width: 30%;
     padding-left: 2em;
     padding-right: 2em;
@@ -60,7 +62,7 @@ blockquote p{
 blockquote .author {
     font-style: italic;
     text-align: right;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 blockquote .author:before {
@@ -68,3 +70,62 @@ blockquote .author:before {
     content: '\2014';
     padding-right: 0.8em;
 }
+
+
+.about{
+    background-color: rgba(240, 228, 228, 0.6);
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 2em;
+   
+ 
+
+    @include bp(medium) {
+		font-size: 1.1em;
+    }
+    
+    @include bp(small) {
+		font-size: 1.0em;
+	}
+
+    & p{
+        padding-bottom: 1em;
+        color: rgb(59, 59, 59);
+    }
+
+    & h1,& h6{
+        text-decoration: underline;
+    }
+
+    & h1{
+        text-align: center;
+        
+    }
+
+    & h6{
+        opacity: 0.5;
+        text-align: center;
+        padding-bottom: 2em;
+       
+        
+    }
+
+& .image {
+    width: 16em;
+    height: 9em;
+    background: rgb(255, 255, 255);
+    border: 0.1em solid black;
+    margin: 1em;
+    padding: 0.3em;
+    box-shadow: 0 0 0.5em 0.5em rgba(0,0,0,0.25);
+   
+}
+
+& .float-right{
+    float: right;
+}
+
+& .float-left{
+    float: left;
+}
+}  
