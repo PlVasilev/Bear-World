@@ -1,0 +1,35 @@
+
+
+.news{
+    display: flex;
+    justify-content: space-between;
+     
+    & aside{
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 20%;
+
+        
+    }
+
+    & article{
+        flex: 0 0 80%;
+    }
+
+    & h1, & h2{
+        color: white;
+    }
+
+    p{
+        color: white;
+    }
+
+    & article {
+        background-color: #443603;
+        display: none;
+      }
+    & article:target {
+        display: block;
+    }
+} 
+
