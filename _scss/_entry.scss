@@ -80,16 +80,11 @@
 .entry-title {
     padding-bottom: 0.5rem;
     font-weight: 500;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .entry-content a,.entry-content p, .worker-info h4, .worker-info p {
     color: var(--color-pimary);
-}
-
-.entry-content a{
-    font-style: italic;
-    
 }
 
 .entry-meta {
@@ -99,7 +94,6 @@
 .entry-meta a{
     margin-bottom: 1em;
     font-style: italic;
-    text-decoration: underline;
 
 }
 

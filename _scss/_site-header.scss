@@ -176,7 +176,7 @@
 }
 
 .site-media {
-	height: 40vh;
+	height: 30vh;
 	overflow: hidden;
 	background-position: center;
 	background-size: cover;
@@ -193,12 +193,24 @@
 .site-media:before {
 	display: block;
 	content: '';
-	background: rgba(19,41,48, 0.4);
+	background: rgba(19,41,48, 0.9);
 	position: absolute;
 	top: 0; 
 	left: 0; 
 	right: 0; 
-	bottom: 0;
+  bottom: 0;
+  animation: shadowTrans 10s linear alternate forwards;
+}
+
+
+@keyframes shadowTrans{
+  0%{ 
+     
+  }
+
+  100%{
+    background: rgba(19,41,48, 0.1);
+  }
 }
 
 .site-media .wrapper {
