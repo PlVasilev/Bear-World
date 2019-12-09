@@ -60,7 +60,12 @@ form {
 
         input,textarea {
             order: 2;
+           
         }
+
+        textarea {
+            resize: none;
+         }
 
         &.submit {
             input {
@@ -108,7 +113,8 @@ fieldset {
 
 
 .workers{
-    width: 90%;
+    padding: 1rem 1rem;
+    width: 100%;
     margin: 0 auto;
 
     & a{
@@ -118,9 +124,31 @@ fieldset {
             font-size: 1.0em;
         }
     }
- 
+    img{
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    h4{
+        margin: 0;
+        font-style: italic;
+        font-size: 1.6em;
+        padding-bottom: 0rem;
+        @include bp(medium) {
+            font-size: 1.4em;
+        }
+    }
 
+    h5{
+        font-size: 1.4em;
+        padding-bottom: 1rem;
+        @include bp(medium) {
+            font-size: 1.2em;
+        }
+    }
 }
+
+
 
 .workers-list{
     display: flex;
@@ -129,51 +157,21 @@ fieldset {
     @include bp(small) {
         flex-direction: column;
     }
-
-}
-
-.workers-list div{
-    flex:  0 0 30%;
-    text-align: center;
-    @include bp(small) {
-        padding: 0 2em 2em 2em;
-        
+    
+    div{
+        flex:  0 0 30%;
+        text-align: center;
+        @include bp(small) {
+            padding: 0 2em 2em 2em;
+            
+    }
+    img {
+    padding-bottom: 1rem;}
     }
 }
 
-.workers-list img {
-    padding-bottom: 1rem;
-}
 
-.workers{
-    padding: 1rem 1rem;
-    width: 100%;
-    margin: 0 auto;
-}
 
-.workers img{
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.workers h4{
-    margin: 0;
-    font-style: italic;
-    font-size: 1.6em;
-    padding-bottom: 0rem;
-    @include bp(medium) {
-        font-size: 1.4em;
-    }
-}
-
-.workers h5{
-    font-size: 1.4em;
-    padding-bottom: 1rem;
-    @include bp(medium) {
-        font-size: 1.2em;
-    }
-}
 
 
 

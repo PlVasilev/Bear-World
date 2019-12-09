@@ -34,6 +34,7 @@
         background: #090;
         color: #FFF;
         font-weight: 700;
+        
     }
     
     & li a:before, .site-nav-label:before  {
@@ -47,7 +48,7 @@
     & li.page-title-contacts a:before {  content: '\f2a0';}
     & li.page-title-home a:before { content: '\f015';}
     & li.page-title-news a:before { content: '\f1ea';}
-    & li.page-title-about-us a:before { content: '\f0c0';}
+    & li.page-title-about-us a:before { content: '\f0c0'; }
 }   
 
 .loaded .site-nav ul li {
@@ -121,6 +122,7 @@ header .wrapper .site-branding{
     display: block;
     padding-right: 0.4em;
     color: rgb(240, 234, 223);;
+    cursor: pointer;
 }
 
 
