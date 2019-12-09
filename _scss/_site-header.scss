@@ -25,10 +25,11 @@
        .slideshow-container h1 {
        position: absolute;
        z-index: 10;
+       font-style: italic;
        color: white;
        top: 40%;
        left: 15%;
-       color: #7D6962;
+       color: rgb(46, 38, 35);
        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
        }
 
@@ -111,18 +112,14 @@
   }
   
   .saving span {
-    font: bold 1em arial, sans-serif;
-    font-style: italic;
-    background-color: #7D6962;
+    background-color: rgb(36, 29, 27);
     color: transparent;
-    text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
-    -webkit-background-clip: text;
-     -moz-background-clip: text;
-          background-clip: text;
-      animation-name: blink;
-      animation-duration: 1.4s;
-      animation-iteration-count: infinite;
-      animation-fill-mode: both;
+    text-shadow: 2px 2px 3px rgba(36, 29, 27,0.5);
+    background-clip: text;
+    animation-name: blink;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
   }
   
   .saving span:nth-child(2) {
@@ -226,18 +223,21 @@
 }
 
 .site-media h2 {
+  font-size: 2.4em;
   font-weight: 700;
-  color: #7D6962;
+  font-style: italic;
+  color: rgb(46, 38, 35);
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   padding-left: 3rem;
+  transition: opacity 0.5s ease-in-out 0.6s, transform 0.6s ease-in-out 0.6s;
+  transform: translateX(-50vw);
 }
 
-.site-media p {
-	font-weight: 400;
-  opacity: 0.8;
-  color: white;
-  padding-left: 3rem;
+.loaded .site-media h2 {
+  transform: translateX(0);
+  opacity: 1;
 }
+
 
 .site-media .social {
   padding-top: 2em;

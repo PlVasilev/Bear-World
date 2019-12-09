@@ -11,14 +11,12 @@
 
 .entries-lable, .site-lable {
     padding-left: 1em;
-    font: bold 2.6em arial, sans-serif;
+    font-size: 2.6em;
     font-style: italic;
-    background-color: #7D6962;
+    background-color: rgb(36, 29, 27);
     color: transparent;
     text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
-    -webkit-background-clip: text;
-     -moz-background-clip: text;
-          background-clip: text;
+    background-clip: text;
     
 }
 
