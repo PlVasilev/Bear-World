@@ -3,7 +3,7 @@
     justify-content: space-between;
     background-color: white;
     padding: 1em;
-    box-shadow: 6px 6px 19px 6px rgb(100, 100, 100);
+    box-shadow: var(--box-shadow);
 
     @include bp(medium){
         display: block;
@@ -48,7 +48,7 @@
         }
         a:focus, a:hover{
             background-color: white;
-            color: #443603;
+            color: var(--color-pimary);
             
         }  
     }
@@ -70,7 +70,7 @@
     }
 
     & article {
-        background-color: #443603;
+        background-color: var(--color-pimary);
         display: none;
       }
     & article:target {
