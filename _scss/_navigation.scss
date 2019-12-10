@@ -81,7 +81,7 @@ header h1 {
 .site-nav-toggle:checked + .site-header .wrapper .site-nav-label .open { display: none; }
 .site-nav-toggle:checked + .site-header .wrapper .site-nav-label .close { display: block; }
 
- @media ( max-width: 999px ){
+ @include bp(medium){
     .site-nav-toggle + .site-header .wrapper .site-nav { display: none; }
     .site-nav-toggle:checked + .site-header .wrapper .site-nav { display: block; }
 

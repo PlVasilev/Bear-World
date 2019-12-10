@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ site.title }}</title>
-    <!-- <link rel="stylesheet" href="/CSS/fontawesome/css/all.css"> -->
     <link rel="stylesheet" href="/css/site.css">
-    <!-- <link rel="stylesheet" href="{{ site.baseurl }}/CSS/fontawesome/css/all.css"> -->
     <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
     <script>
         window.addEventListener('load', (event) => {
@@ -37,7 +35,6 @@
                         {% if current_page.title %}
                         <li class="page-title-{{ current_page.title | slugify }}{% if current_page.url == page.url %} current-page{% endif %}"><a
                                 href="{{ site.baseurl }}{{ current_page.url }}">{{ current_page.title }}</a></li>
-                                <!-- {% if current_page.url == '/news/' %}#article1{% endif %} -->
                         {% endif %}
                         {% endfor %}
 
