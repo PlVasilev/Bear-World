@@ -87,11 +87,16 @@ blockquote .author:before {
 
     & p{
         padding-bottom: 1em;
-        color: rgb(59, 59, 59);
+        color: var(--color-pimary);
     }
 
     & h1,& h6{
         text-decoration: underline;
+        color: var(--color-pimary);
+    }
+
+    & h2{
+        color: var(--color-pimary);
     }
 
     & h1{
@@ -100,7 +105,7 @@ blockquote .author:before {
     }
 
     & h6{
-        opacity: 0.5;
+        opacity: 0.8;
         text-align: center;
         padding-bottom: 2em;
        
