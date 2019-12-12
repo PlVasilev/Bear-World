@@ -1,9 +1,8 @@
 .site-nav {
-    text-align: right;
 
-    & ul { display: flex; }
+     ul { display: flex; }
     
-    & ul li {
+     ul li {
         display: block;
         margin: 0 0.6em;
         transform: translate(0, -5em);
@@ -16,7 +15,7 @@
         &:nth-child(4) { transition-delay: 0.1s; }
     }
 
-    & a {
+     a {
         display: flex;
         padding: 0.4em 0.8em;
         background-color: rgb(240, 234, 223);
@@ -37,18 +36,18 @@
         
     }
     
-    & li a:before, .site-nav-label:before  {
+    li a:before, .site-nav-label:before  {
         display: block;
         margin-right: 0.5em;
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
     }
     
-    & li.page-title-gallery a:before {content: '\f302';}
-    & li.page-title-contacts a:before {  content: '\f2a0';}
-    & li.page-title-home a:before { content: '\f015';}
-    & li.page-title-news a:before { content: '\f1ea';}
-    & li.page-title-about-us a:before { content: '\f0c0'; }
+    li.page-title-gallery a:before {content: '\f302';}
+    li.page-title-contacts a:before {  content: '\f2a0';}
+    li.page-title-home a:before { content: '\f015';}
+    li.page-title-news a:before { content: '\f1ea';}
+    li.page-title-about-us a:before { content: '\f0c0'; }
 }   
 
 .loaded .site-nav ul li {
@@ -100,22 +99,22 @@ header .wrapper .site-branding{
 .site-nav{
     width: 100%;
     padding-bottom: 0.5em;
+
+    ul {
+        flex-direction: column;  
+        padding-left: 0;
+    }
+
+    li {
+        list-style: none outside;
+        padding: 0.2em;
+        
+    }
 }
 
 .site-title{
     align-self: flex-start;
     padding-bottom: 2rem;
-}
-
-.site-nav ul {
-    flex-direction: column;  
-    padding-left: 0;
-}
-
-.site-nav li {
-    list-style: none outside;
-    padding: 0.2em;
-    
 }
 
 .site-nav-label {
@@ -124,8 +123,5 @@ header .wrapper .site-branding{
     color: rgb(240, 234, 223);;
     cursor: pointer;
 }
-
-
-
 }
 

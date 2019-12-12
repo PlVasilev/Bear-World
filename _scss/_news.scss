@@ -9,7 +9,7 @@
         display: block;
     }
      
-    & aside {
+     aside {
         display: flex;
         flex-direction: column;
         flex: 1 1 20%;
@@ -30,7 +30,7 @@
         }       
     }
 
-    & article{
+     article{
         padding-top: 1rem;
         flex: 0 0 80%;
         position: relative;
@@ -53,11 +53,11 @@
         }  
     }
 
-    & h2{
+     h2{
         color: white;
     }
 
-    & h6{
+     h6{
         color: rgb(189, 189, 189);
         text-align: left;
         font-style: italic;
@@ -69,11 +69,11 @@
         color: white;
     }
 
-    & article {
+     article {
         background-color: var(--color-pimary);
         display: none;
       }
-    & article:target {
+     article:target {
         display: block;
     }
 } 

@@ -55,9 +55,7 @@
             img{
                 height: 100%;
                 width: auto;
-            }
-         
-           
+            }          
         }
         &:hover img {
             transform: translate( -50%, -50% ) scale(1.2);
@@ -79,11 +77,8 @@
             content: '';
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
-            z-index: 5;
-            // background: rgba(black, 0.5);
-           
-            animation: example 4s ease-in-out alternate infinite forwards;
-           
+            z-index: 5;     
+            animation: border-shadow 4s ease-in-out alternate infinite forwards;          
         }
     }
 
@@ -111,7 +106,7 @@
 
 
 
-@keyframes example {
+@keyframes border-shadow {
     from { box-shadow: 0 0 1em 0.5em var(--color-pimary) inset;}
     to { box-shadow: 0 0 1em 0.5em white inset;}
   }

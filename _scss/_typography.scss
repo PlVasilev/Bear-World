@@ -75,8 +75,6 @@ blockquote .author:before {
     font-weight: 400;
     padding: 2em;
    
- 
-
     @include bp(medium) {
 		font-size: 1.1em;
     }
@@ -85,34 +83,31 @@ blockquote .author:before {
 		font-size: 1.0em;
 	}
 
-    & p{
+     p{
         padding-bottom: 1em;
         color: var(--color-pimary);
     }
 
-    & h1,& h6{
+     h1, h6{
         text-decoration: underline;
         color: var(--color-pimary);
     }
 
-    & h2{
+     h2{
         color: var(--color-pimary);
     }
 
-    & h1{
-        text-align: center;
-        
+     h1{
+        text-align: center;      
     }
 
-    & h6{
+     h6{
         opacity: 0.8;
         text-align: center;
-        padding-bottom: 2em;
-       
-        
+        padding-bottom: 2em;        
     }
 
-& .image {
+ .image {
     width: 16em;
     height: 9em;
     background: rgb(255, 255, 255);
@@ -123,11 +118,11 @@ blockquote .author:before {
    
 }
 
-& .float-right{
+ .float-right{
     float: right;
 }
 
-& .float-left{
+ .float-left{
     float: left;
 }
 }  

@@ -57,7 +57,7 @@
     position: relative;
     overflow: hidden;
 
-    & img {
+    img {
         display: block;
         width: 100%;
         height: auto;
@@ -103,7 +103,7 @@
 .entry-meta {
     margin-bottom: 1em;
 
-    & a{
+     a{
         margin-bottom: 1em;
         font-style: italic;    
     }
@@ -119,7 +119,7 @@
     top: 1em;
     box-shadow: var(--box-shadow);
 
-    & .entries-lable{
+     .entries-lable{
         font-size: 0.9em;
         font-weight: 700;
         font-style: italic;
@@ -135,7 +135,7 @@
     padding: 1em;
     box-shadow: var(--box-shadow);
 
-   & h4{
+    h4{
         font-style: italic;
         text-align: center;
        font-size: 2em;
@@ -144,7 +144,7 @@
 .worker{
     display: flex;
 
-    & span{
+     span{
         display: block;
      }
      
@@ -196,7 +196,7 @@
    margin-left: 1em;
    justify-content: center;
 
-  & p{
+   p{
     font-size: 1em;
     padding: 1em;
   }
@@ -222,20 +222,20 @@
     .entry{
         display: block;
         padding-bottom: 1rem;
+
+        &:nth-child(even) .entry-content {
+            margin: 2em 2em 2em 2em;
+        }
+    
+        &:nth-child(odd) .entry-content {
+            margin: 2em 2em 2em 2em;
+        }
     }
     
     .entry-media img {
         width: 92%;
     }
-    
-    .entry:nth-child(even) .entry-content {
-        margin: 2em 2em 2em 2em;
-    }
-
-    .entry:nth-child(odd) .entry-content {
-        margin: 2em 2em 2em 2em;
-    }
-
+       
     .staff h4{
     font-size: 1.5em;
     }
@@ -286,33 +286,34 @@ blockquote {
 
 .quote{
     flex-direction: column;
+
+    .entries-lable{
+        font-size: 1.2em;
+        writing-mode: horizontal-tb;
+        text-orientation: sideways;
+        margin-bottom: 1em;
+    }
 }
 
-.quote .entries-lable{
-    font-size: 1.2em;
-    writing-mode: horizontal-tb;
-    text-orientation: sideways;
-    margin-bottom: 1em;
-}
+
 
 .worker{
     flex-direction: column;
     flex-grow: 1;
-}
 
-.worker .worker-info{
-    flex-direction: column;
-    flex: 1 1 50%;
-    margin-left: 0 auto;
-    padding-bottom: 1em;
-}
+    .worker-info{
+        flex-direction: column;
+        flex: 1 1 50%;
+        margin-left: 0 auto;
+        padding-bottom: 1em;
+    }
 
-.worker .worker-avatar{
-    flex-direction: column;
-    flex: 1 1 50%;
-    margin-left: 0 auto;
+    .worker-avatar{
+        flex-direction: column;
+        flex: 1 1 50%;
+        margin-left: 0 auto;
+    }
 }
-
 }
 
 
