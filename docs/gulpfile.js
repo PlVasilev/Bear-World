@@ -27,10 +27,9 @@ gulp.task("jekyll", function() {
 });
 
 gulp.task("watch", function() {
-
 	browserSync.init({
 		server: {
-            baseDir: "./docs/"
+            baseDir: ".docs/"
 		}
 	});
 
